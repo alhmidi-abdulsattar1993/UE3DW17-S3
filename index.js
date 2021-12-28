@@ -8,11 +8,11 @@ async function run() {
         await client.connect();
         const database = client.db('alhmidi_abdulsattar');
         const movies = database.collection('pays');
-        // Req 
-        const query = { "cca2": "AQ" };
+        // Req  5 
+        const query = { "name.common": "Syria" };
 
-        const movie = await movies.findOne(query);
-        console.log(movie.name.official);
+        const pays_prefere = await movies.findOne(query);
+        console.log(pays_prefere);
 
     } finally {
         // Ensures that the client will close when you finish/error
