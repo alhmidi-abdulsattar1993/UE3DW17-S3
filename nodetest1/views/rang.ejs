@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rang 1 à 10</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <h1>Les titres des documents ayant les rangs 1 à 10</h1>
+    <ul>
+        <% var list = ''; for (i = 0; i < rang.length; i++) { list += '
+      <li>' + rang[i].fields.titre_avec_lien_vers_le_catalogue + '</li>
+      '; } %>
+            <%- list %>
+    </ul>
+</body>
+
+</html>

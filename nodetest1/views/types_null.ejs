@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toutes les informations vers les documents n'ayant pas de champ "type_de_document</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Toutes les informations vers les documents n'ayant pas de champ "type_de_document</h1>
+    <ul>
+        <%
+var list = '';
+for (i = 0; i < types_null.length; i++) {
+    list += '<li>' + types_null[i].fields.auteur
+        + '</li>';
+}
+%>
+            <%- list %>
+    </ul>
+</body>
+
+</html>

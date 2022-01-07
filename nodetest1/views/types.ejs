@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Les différents types de document qui apparaissent dans cette base
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <h1>Les différents types de document qui apparaissent dans cette base</h1>
+    <ul>
+        <% var list = ''; for (i = 0; i < types.length; i++) { list += '
+      <li>' + types[i] + '</li>
+      '; } %>
+            <%- list %>
+    </ul>
+</body>
+
+</html>
